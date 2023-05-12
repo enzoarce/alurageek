@@ -1,0 +1,300 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: space-around;
+}
+
+.container {
+    display: flex;
+}
+
+#buscar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 8px;
+    justify-content: end;
+}
+
+#buscar input {
+    outline: none;
+    width: 393px;
+    height: 40px;
+    background: #F5F5F5;
+    border: 1px solid #F5F5F5;
+    border-radius: 20px;
+    padding: 0 15px;
+    padding-right: 40px;
+}
+
+#lupa {
+    position: absolute;
+    margin-top: 3px;
+    margin-right: 10px;
+}
+
+#btn-login {
+    width: 182px;
+    height: 51px;
+    border: 1px solid #2A7AE4;
+    background: #FFFFFF;
+    color: #2A7AE4;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#promo {
+    height: 352px;
+    background-image: url(../img/hongo.webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+#promo-texto{
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+#promo-texto h1 {
+    font-size: 3.25rem;
+}
+
+#promo-texto p {
+    font-size: 1.375rem;
+    margin-top: 12px;
+}
+
+.btn {
+    width: 129px;
+    height: 51px;
+    border: 1px solid #2A7AE4;;
+    background: #2A7AE4;
+    color: #FFFFFF;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+#container-promo {
+    padding: 0%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+#container-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.galeria {
+    width: 85%;
+    height: 330px;
+    margin-top: 60px;
+}
+
+.galeria h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 38px;
+    color: #464646;
+}
+
+.name {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px 20px 0px;
+}
+
+.ver-todo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ver-todo a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size:1rem;
+    color: #2A7AE4;
+    margin-right: 8px;
+}
+
+.contenedor-productos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.producto {
+    width: 176px;
+    height: 252px;
+}
+
+.producto .img {
+    width: auto;
+    height: 174px;
+    position: relative;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.producto h4 {
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+.producto p {
+font-weight: 700;
+font-size: 1rem;
+color: #464646;
+}
+
+.producto a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #2A7AE4;
+}
+
+.textos {
+    padding-top: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+#container-footer {
+    background-color: #EAF2FD;
+    height: 368px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#primer-footer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#links {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#links a {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 19px;
+    color: #464646;
+}
+
+.form .grupo {
+    margin-top: 10px;
+    position: relative;
+}
+
+.form button {
+    margin-top: 10px;
+}
+
+.grupo .form-name {
+    height: 56px;
+    width: 560px;
+}
+
+.form h4 {
+    font-size: 1rem;
+    line-height: 19px;
+    color: #464646;
+}
+
+.space {
+    outline: none;
+    padding: 25px 10px 10px 10px;
+    display: block;
+    border: none;
+    box-shadow: 0px 1px rgba(0, 0, 0, .2);
+    font-size: 1rem;
+    line-height: 20px;
+    color: #464646;
+}
+
+.grupo label {
+    font-size: 1rem;
+    position: absolute;
+    color: #A2A2A2;
+    top: 18px;
+    left: 10px;
+    transition: 0.5s ease-in-out all;
+    pointer-events: none;
+}
+
+textarea {
+    width: 560px;
+    height: 82px;
+}
+
+input:focus~label, textarea:focus~label {
+    top: 8px;
+    font-size: 0.8rem;
+    color: #2A7AE4;
+}
+
+#last-footer {
+    width: auto;
+    height: 102px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+@media (max-width: 1250px) {
+    textarea, .grupo .form-name {
+        width: 400px;
+    }
+
+    .oculto {
+        display: none;
+    }
+}
+
+@media (max-width: 1050px) {
+    .oculto-tablet {
+        display: none;
+    }
+
+    .links {
+        flex-wrap: wrap;
+    }
+
+    
+}
+
+
+
